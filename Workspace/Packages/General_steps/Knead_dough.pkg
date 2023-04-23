@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2023.1.0.134160+cdfac9ec1040" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">knead_type</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="a44b6bad-0fb1-4fa5-8ca0-1bcddbab69e9" name="TsPrecondBlock" xsi:type="utility-fd32d18b-c16d-45ca-9934-f8bffe11fcc3">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Precondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Precondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="53841339-8dfb-46f1-a455-879e8eb418a9" name="TsMessageUI" xsi:type="utility-6d02dfc0-fdd1-11dd-bb40-001a6bc47c7f">
+				<DLG-TITLE format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">Kneading machine</VALUE>
+				</DLG-TITLE>
+				<DLG-DESCR format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">Do you knead the dough with a machine or by hand?</VALUE>
+				</DLG-DESCR>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">knead_type</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<MESSAGE-TYPE xsi:type="integer">1</MESSAGE-TYPE>
+				<BUTTONS>
+					<ELEMENT xsi:type="buttonDefinition">
+						<LABEL format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">Machine</VALUE>
+						</LABEL>
+						<VALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">maschine</VALUE>
+						</VALUE>
+					</ELEMENT>
+					<ELEMENT xsi:type="buttonDefinition">
+						<LABEL format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">Hand</VALUE>
+						</LABEL>
+						<VALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">hand</VALUE>
+						</VALUE>
+					</ELEMENT>
+				</BUTTONS>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="9737309c-6b6e-4bd2-9a90-ce4b44799a08" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Aktion</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Action</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="473f1994-1484-4037-8670-a61919251daf" name="TsSwitchCase" xsi:type="utility-83517ac0-9f53-11dd-9c62-001b24fa84be">
+				<TESTSTEP id="c12247cb-672c-4dfa-826a-b07152755601" xsi:type="caseNode">
+					<TESTSTEP format-rev="3" id="a7bb27ed-1403-4195-9819-7e7f33e96535" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+						<ACTION xsi:type="I18NItem">
+							<MULTILANGDATA>
+								<ELEMENT dkey="de_DE">
+									<DVALUE xsi:type="string">Knete den Teig auf der Arbeitsfläche (ohne Mehl) für 10min bis 15min</DVALUE>
+								</ELEMENT>
+								<ELEMENT dkey="en_US">
+									<DVALUE xsi:type="string">Knead on the work surface (without flour) for 10min to 15min</DVALUE>
+								</ELEMENT>
+							</MULTILANGDATA>
+							<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+						</ACTION>
+						<USER-INTERACTION xsi:type="boolean">True</USER-INTERACTION>
+					</TESTSTEP>
+					<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">hand</VALUE>
+					</CASE-VALUE>
+					<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+				</TESTSTEP>
+				<TESTSTEP id="ebdbfa5b-7213-4ea8-8faf-736d4eaffd4f" xsi:type="caseNode">
+					<TESTSTEP format-rev="3" id="573159bd-cd68-47e1-ad06-84aff30e6d16" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+						<ACTION xsi:type="I18NItem">
+							<MULTILANGDATA>
+								<ELEMENT dkey="de_DE">
+									<DVALUE xsi:type="string">Knete den Teig für 5min in der Maschine</DVALUE>
+								</ELEMENT>
+								<ELEMENT dkey="en_US">
+									<DVALUE xsi:type="string">Knead the dough for 5min in the maschine</DVALUE>
+								</ELEMENT>
+							</MULTILANGDATA>
+							<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+						</ACTION>
+						<USER-INTERACTION xsi:type="boolean">True</USER-INTERACTION>
+					</TESTSTEP>
+					<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">maschine</VALUE>
+					</CASE-VALUE>
+					<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+				</TESTSTEP>
+				<TESTSTEP id="fb3bc8e6-1015-4af7-9d34-d775ba77512b" xsi:type="caseNode">
+					<TESTSTEP id="446fddbb-ac7f-4a33-9358-a7b226c629db" name="TsMessageUI" xsi:type="utility-6d02dfc0-fdd1-11dd-bb40-001a6bc47c7f">
+						<DLG-TITLE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">Not implemented</VALUE>
+						</DLG-TITLE>
+						<DLG-DESCR format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">Knead type is not supported!</VALUE>
+						</DLG-DESCR>
+						<MESSAGE-TYPE xsi:type="integer">3</MESSAGE-TYPE>
+						<BUTTONS>
+							<ELEMENT xsi:type="buttonDefinition">
+								<LABEL format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="string">OK</VALUE>
+								</LABEL>
+								<VALUE format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="boolean">True</VALUE>
+								</VALUE>
+							</ELEMENT>
+						</BUTTONS>
+					</TESTSTEP>
+					<TESTSTEP id="16799a9e-a150-486a-9578-f4af39ee44fd" name="TsReturn" xsi:type="utility-4f3c5500-f0f5-11dc-b88f-001b24fa84be">
+						<RETURN-RESULT xsi:type="string">ERROR</RETURN-RESULT>
+					</TESTSTEP>
+					<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">0</VALUE>
+					</CASE-VALUE>
+					<IS-DEFAULT xsi:type="boolean">True</IS-DEFAULT>
+				</TESTSTEP>
+				<SWITCH-VALUE xsi:type="varBaseExpression">
+					<NAME xsi:type="string">knead_type</NAME>
+				</SWITCH-VALUE>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="2" id="df991617-4384-4e58-ac44-f3a726fc3b87" name="TsPostcondBlock" xsi:type="utility-0d2ac4dc-1d8f-4182-81d1-a5d5ca74a44f">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Postcondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Postcondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<EFFECT-TEST-RESULT xsi:type="boolean">False</EFFECT-TEST-RESULT>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

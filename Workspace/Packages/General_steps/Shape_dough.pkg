@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2023.1.0.134160+cdfac9ec1040" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="a44b6bad-0fb1-4fa5-8ca0-1bcddbab69e9" name="TsPrecondBlock" xsi:type="utility-fd32d18b-c16d-45ca-9934-f8bffe11fcc3">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Precondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Precondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="9737309c-6b6e-4bd2-9a90-ce4b44799a08" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Aktion</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Action</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="3" id="f3d7d93a-1b0c-4856-ae39-3df2542af9bb" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Brotteig auf eienr leicht bemehlter Arbeitsfläche rundwirken</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">Work the bread dough on a lightly floured work surface.</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<USER-INTERACTION xsi:type="boolean">True</USER-INTERACTION>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="015fcb3a-db7c-421a-a64b-8363cc1707eb" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Brotleib in ein Gärkörbchen oder Schüssel mit bemehlten Küchentuch mit Schluss nach unten legen</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">Place the loaf in a proofing basket or bowl with a floured kitchen towel with the end downwards</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<USER-INTERACTION xsi:type="boolean">True</USER-INTERACTION>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="2" id="df991617-4384-4e58-ac44-f3a726fc3b87" name="TsPostcondBlock" xsi:type="utility-0d2ac4dc-1d8f-4182-81d1-a5d5ca74a44f">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Postcondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Postcondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<EFFECT-TEST-RESULT xsi:type="boolean">False</EFFECT-TEST-RESULT>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

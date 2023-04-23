@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2023.1.0.134160+cdfac9ec1040" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">ingredients_list</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">[]</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">i</NAME>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">quantity</NAME>
+			<DESCRIPTION xsi:type="string">[g]</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">ingredient</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="a44b6bad-0fb1-4fa5-8ca0-1bcddbab69e9" name="TsPrecondBlock" xsi:type="utility-fd32d18b-c16d-45ca-9934-f8bffe11fcc3">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Precondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Precondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="9737309c-6b6e-4bd2-9a90-ce4b44799a08" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Aktion</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Action</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="3" id="cf53a0d1-e5ae-49f6-a0d8-db5c6ba2db97" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Alle Zutaten abwiegen und in einer Schüssel mischen</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">Weigh all ingredients and mix in a bowl</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<USER-INTERACTION xsi:type="boolean">True</USER-INTERACTION>
+			</TESTSTEP>
+			<TESTSTEP id="0c5ac19e-d64e-43fd-9d7e-5fb08d4b09c9" name="TsLoop" xsi:type="utility-3da58cf0-4fef-11dc-be56-0013728784ee">
+				<TESTSTEP format-rev="3" id="2d0377f4-e999-4f22-86b5-831f465c96ad" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+					<VARIABLE-REFS>
+						<VARIABLE-NAME dkey="default">
+							<DVALUE xsi:type="string">quantity</DVALUE>
+						</VARIABLE-NAME>
+					</VARIABLE-REFS>
+					<FORMULA xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="string">BINARY_SUBSCR</NAME>
+						<FIRST-COMPONENT xsi:type="binaryOpBaseExpression">
+							<NAME xsi:type="string">BINARY_SUBSCR</NAME>
+							<FIRST-COMPONENT xsi:type="varBaseExpression">
+								<NAME xsi:type="string">ingredients_list</NAME>
+							</FIRST-COMPONENT>
+							<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+								<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+								<FIRST-COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="string">i</NAME>
+								</FIRST-COMPONENT>
+								<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">1</VALUE>
+								</SECOND-COMPONENT>
+							</SECOND-COMPONENT>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</SECOND-COMPONENT>
+					</FORMULA>
+				</TESTSTEP>
+				<TESTSTEP format-rev="3" id="8f69078d-d658-4fcf-b45c-6cffb25d22e1" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+					<VARIABLE-REFS>
+						<VARIABLE-NAME dkey="default">
+							<DVALUE xsi:type="string">ingredient</DVALUE>
+						</VARIABLE-NAME>
+					</VARIABLE-REFS>
+					<FORMULA xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="string">BINARY_SUBSCR</NAME>
+						<FIRST-COMPONENT xsi:type="binaryOpBaseExpression">
+							<NAME xsi:type="string">BINARY_SUBSCR</NAME>
+							<FIRST-COMPONENT xsi:type="varBaseExpression">
+								<NAME xsi:type="string">ingredients_list</NAME>
+							</FIRST-COMPONENT>
+							<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+								<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+								<FIRST-COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="string">i</NAME>
+								</FIRST-COMPONENT>
+								<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">1</VALUE>
+								</SECOND-COMPONENT>
+							</SECOND-COMPONENT>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</SECOND-COMPONENT>
+					</FORMULA>
+				</TESTSTEP>
+				<TESTSTEP format-rev="3" id="31fe9b34-3bc0-462e-a392-fb2932d3bb0c" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="de_DE">
+								<DVALUE xsi:type="string">{quantity}g {ingredient}</DVALUE>
+							</ELEMENT>
+							<ELEMENT dkey="en_US">
+								<DVALUE xsi:type="string">{quantity}g of {ingredient}</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+					</ACTION>
+					<USER-INTERACTION xsi:type="boolean">True</USER-INTERACTION>
+				</TESTSTEP>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">i</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<LOOP-COUNT xsi:type="functionBaseExpression">
+					<COMPONENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">len</NAME>
+					</COMPONENT>
+					<ARGUMENTS>
+						<ARGUMENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">ingredients_list</NAME>
+						</ARGUMENT>
+					</ARGUMENTS>
+				</LOOP-COUNT>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="2" id="df991617-4384-4e58-ac44-f3a726fc3b87" name="TsPostcondBlock" xsi:type="utility-0d2ac4dc-1d8f-4182-81d1-a5d5ca74a44f">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Postcondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Postcondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<EFFECT-TEST-RESULT xsi:type="boolean">False</EFFECT-TEST-RESULT>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT format-rev="10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NAME xsi:type="string">Project</NAME>
+	<ENABLED xsi:type="boolean">True</ENABLED>
+	<REPORTING xsi:type="boolean">True</REPORTING>
+	<ID xsi:type="string">a1ece94ae1de11edb68f7c70dbe79a36</ID>
+	<COMPONENTS>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Materials_available</NAME>
+			<ENABLED xsi:type="boolean">False</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">d8a27f80e1de11edbf397c70dbe79a36</ID>
+			<COMPONENTS/>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">../General_steps/Materials_available.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Mix_dough</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">e352bf93e1e811eda48c7c70dbe79a36</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">ingredients</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">eb1057b1e1de11edace57c70dbe79a36</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">ingredients_list</NAME>
+							<VALUE xsi:type="listOrTupleBaseExpression">
+								<IS-LIST xsi:type="boolean">True</IS-LIST>
+								<EXPRESSION-LIST>
+									<BASE-EXPRESSION xsi:type="listOrTupleBaseExpression">
+										<IS-LIST xsi:type="boolean">False</IS-LIST>
+										<EXPRESSION-LIST>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="integer">390</VALUE>
+											</BASE-EXPRESSION>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="string">water</VALUE>
+											</BASE-EXPRESSION>
+										</EXPRESSION-LIST>
+									</BASE-EXPRESSION>
+									<BASE-EXPRESSION xsi:type="listOrTupleBaseExpression">
+										<IS-LIST xsi:type="boolean">False</IS-LIST>
+										<EXPRESSION-LIST>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="integer">12</VALUE>
+											</BASE-EXPRESSION>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="string">salt</VALUE>
+											</BASE-EXPRESSION>
+										</EXPRESSION-LIST>
+									</BASE-EXPRESSION>
+									<BASE-EXPRESSION xsi:type="listOrTupleBaseExpression">
+										<IS-LIST xsi:type="boolean">False</IS-LIST>
+										<EXPRESSION-LIST>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="integer">600</VALUE>
+											</BASE-EXPRESSION>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="string">wheat flour type 550</VALUE>
+											</BASE-EXPRESSION>
+										</EXPRESSION-LIST>
+									</BASE-EXPRESSION>
+									<BASE-EXPRESSION xsi:type="listOrTupleBaseExpression">
+										<IS-LIST xsi:type="boolean">False</IS-LIST>
+										<EXPRESSION-LIST>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="float">0.5</VALUE>
+											</BASE-EXPRESSION>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="string">fresh yeast</VALUE>
+											</BASE-EXPRESSION>
+										</EXPRESSION-LIST>
+									</BASE-EXPRESSION>
+								</EXPRESSION-LIST>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">Zutaten</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">633e3b3ce1f411eda9237c70dbe79a36</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">ingredients_list</NAME>
+							<VALUE xsi:type="listOrTupleBaseExpression">
+								<IS-LIST xsi:type="boolean">True</IS-LIST>
+								<EXPRESSION-LIST>
+									<BASE-EXPRESSION xsi:type="listOrTupleBaseExpression">
+										<IS-LIST xsi:type="boolean">False</IS-LIST>
+										<EXPRESSION-LIST>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="integer">390</VALUE>
+											</BASE-EXPRESSION>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="string">Wasser</VALUE>
+											</BASE-EXPRESSION>
+										</EXPRESSION-LIST>
+									</BASE-EXPRESSION>
+									<BASE-EXPRESSION xsi:type="listOrTupleBaseExpression">
+										<IS-LIST xsi:type="boolean">False</IS-LIST>
+										<EXPRESSION-LIST>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="integer">12</VALUE>
+											</BASE-EXPRESSION>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="string">Salz</VALUE>
+											</BASE-EXPRESSION>
+										</EXPRESSION-LIST>
+									</BASE-EXPRESSION>
+									<BASE-EXPRESSION xsi:type="listOrTupleBaseExpression">
+										<IS-LIST xsi:type="boolean">False</IS-LIST>
+										<EXPRESSION-LIST>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="integer">600</VALUE>
+											</BASE-EXPRESSION>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="string">Weizenmehl Type 550</VALUE>
+											</BASE-EXPRESSION>
+										</EXPRESSION-LIST>
+									</BASE-EXPRESSION>
+									<BASE-EXPRESSION xsi:type="listOrTupleBaseExpression">
+										<IS-LIST xsi:type="boolean">False</IS-LIST>
+										<EXPRESSION-LIST>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="float">0.5</VALUE>
+											</BASE-EXPRESSION>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="string">Frischhefe</VALUE>
+											</BASE-EXPRESSION>
+										</EXPRESSION-LIST>
+									</BASE-EXPRESSION>
+								</EXPRESSION-LIST>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+			</COMPONENTS>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">../General_steps/Mix_dough.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Knead_dough</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">e5f85b1ae1e811edaea17c70dbe79a36</ID>
+			<COMPONENTS/>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">../General_steps/Knead_dough.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Stock_fermentation</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">05320a0de1df11ed80727c70dbe79a36</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">timer</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">16c24b33e1df11edba3d7c70dbe79a36</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">duration</NAME>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">24</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+			</COMPONENTS>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">../General_steps/Stock_fermentation.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Stretch_and_fold_dough</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">0a830750e1df11edb2797c70dbe79a36</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">timer</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">1b15321fe1df11edbffc7c70dbe79a36</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">duration</NAME>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">8</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+			</COMPONENTS>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">../General_steps/Stretch_and_fold_dough.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Shape_dough</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">104d74d8e1df11edbb697c70dbe79a36</ID>
+			<COMPONENTS/>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">../General_steps/Shape_dough.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Piece_fermentation</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">33ea7c03e1df11eda6707c70dbe79a36</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">timer</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">ad95ce8ae1df11eda2787c70dbe79a36</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">duration</NAME>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">1</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+			</COMPONENTS>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">../General_steps/Piece_fermentation.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Preheat_oven</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">11f67d67e1df11edadc77c70dbe79a36</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">temperature</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">b18c2cdee1ed11ed88eb7c70dbe79a36</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">temperature</NAME>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">250</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+			</COMPONENTS>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">../General_steps/Preheat_oven.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Baking_bread</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">1314e5d6e1df11edaeec7c70dbe79a36</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">timer</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">af7be34ce1df11ed89e57c70dbe79a36</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">duration_with_cover</NAME>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">30</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">duration_without_cover</NAME>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">15</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">temperature</NAME>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">230</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+			</COMPONENTS>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">../General_steps/Baking_bread.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Enjoy_your_bread</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">2f5806c0e1e011edab3d7c70dbe79a36</ID>
+			<COMPONENTS/>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">../General_steps/Enjoy_your_bread.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+	</COMPONENTS>
+</PROJECT>
