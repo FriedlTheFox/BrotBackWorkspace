@@ -37,7 +37,7 @@
 				<ACTION xsi:type="I18NItem">
 					<MULTILANGDATA>
 						<ELEMENT dkey="de_DE">
-							<DVALUE xsi:type="string">Brotteig auf eienr leicht bemehlter Arbeitsfläche rundwirken</DVALUE>
+							<DVALUE xsi:type="string">Brotteig auf einer leicht bemehlter Arbeitsfläche rundwirken</DVALUE>
 						</ELEMENT>
 						<ELEMENT dkey="en_US">
 							<DVALUE xsi:type="string">Work the bread dough on a lightly floured work surface.</DVALUE>

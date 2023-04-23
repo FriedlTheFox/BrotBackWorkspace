@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2023.1.0.134160+cdfac9ec1040" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" out="true" xsi:type="variable">
+			<NAME xsi:type="string">rank</NAME>
+			<DESCRIPTION xsi:type="string">1..very good - 6..poor</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">-1</DATA>
+				<TEXTDATA xsi:type="string">-1</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="515" name="TsPrecondBlock" xsi:type="utility-fd32d18b-c16d-45ca-9934-f8bffe11fcc3">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Precondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Precondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="521" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Aktion</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Action</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="3" id="42ab1f29-556d-4c33-9368-c12d1ee5ea25" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Wie war die Oberflächen- und Krusteneigenschaften?</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">How was the surface and crust properties?</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<USER-INTERACTION xsi:type="boolean">True</USER-INTERACTION>
+				<TESTSTEP id="07c08834-b147-49e3-94a2-00790155d858" name="TsMessageUI" xsi:type="utility-6d02dfc0-fdd1-11dd-bb40-001a6bc47c7f">
+					<DLG-TITLE format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">Evaluation</VALUE>
+					</DLG-TITLE>
+					<DLG-DESCR format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">1..very good - 6..poor</VALUE>
+					</DLG-DESCR>
+					<VARIABLE-REFS>
+						<VARIABLE-NAME dkey="default">
+							<DVALUE xsi:type="string">rank</DVALUE>
+						</VARIABLE-NAME>
+					</VARIABLE-REFS>
+					<MESSAGE-TYPE xsi:type="integer">1</MESSAGE-TYPE>
+					<BUTTONS>
+						<ELEMENT xsi:type="buttonDefinition">
+							<LABEL format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">1</VALUE>
+							</LABEL>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">1</VALUE>
+							</VALUE>
+						</ELEMENT>
+						<ELEMENT xsi:type="buttonDefinition">
+							<LABEL format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">2</VALUE>
+							</LABEL>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">2</VALUE>
+							</VALUE>
+						</ELEMENT>
+						<ELEMENT xsi:type="buttonDefinition">
+							<LABEL format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">3</VALUE>
+							</LABEL>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">3</VALUE>
+							</VALUE>
+						</ELEMENT>
+						<ELEMENT xsi:type="buttonDefinition">
+							<LABEL format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">4</VALUE>
+							</LABEL>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">4</VALUE>
+							</VALUE>
+						</ELEMENT>
+						<ELEMENT xsi:type="buttonDefinition">
+							<LABEL format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">5</VALUE>
+							</LABEL>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</VALUE>
+						</ELEMENT>
+						<ELEMENT xsi:type="buttonDefinition">
+							<LABEL format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">6</VALUE>
+							</LABEL>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">6</VALUE>
+							</VALUE>
+						</ELEMENT>
+					</BUTTONS>
+				</TESTSTEP>
+				<TESTSTEP id="fb559c64-5186-405b-a5e1-2a98fdf92d3b" name="TsSwitchCase" xsi:type="utility-83517ac0-9f53-11dd-9c62-001b24fa84be">
+					<TESTSTEP id="8cf6ef74-fc89-4d98-a744-744ebf354fcb" xsi:type="caseNode">
+						<TESTSTEP format-rev="1" id="6d37787a-6b41-4eaf-910a-2ffcda65318f" name="TsComment" xsi:type="utility-1f4de951-4fef-11dc-969a-0013728784ee">
+							<COMMENT-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string"/>
+							</COMMENT-EXPRESSION>
+							<COMMENT-VERDICT xsi:type="string">SUCCESS</COMMENT-VERDICT>
+						</TESTSTEP>
+						<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</CASE-VALUE>
+						<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+					</TESTSTEP>
+					<TESTSTEP id="a19be041-8200-4a56-b5bd-cf15de1713d2" xsi:type="caseNode">
+						<TESTSTEP format-rev="1" id="d61f6fb6-3810-47dc-9f7d-e954d832044b" name="TsComment" xsi:type="utility-1f4de951-4fef-11dc-969a-0013728784ee">
+							<COMMENT-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string"/>
+							</COMMENT-EXPRESSION>
+							<COMMENT-VERDICT xsi:type="string">SUCCESS</COMMENT-VERDICT>
+						</TESTSTEP>
+						<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">2</VALUE>
+						</CASE-VALUE>
+						<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+					</TESTSTEP>
+					<TESTSTEP id="6d926b35-647d-4643-82ae-b8de4d9bc36c" xsi:type="caseNode">
+						<TESTSTEP format-rev="1" id="1024e3e5-0aff-4a64-82e8-783ef572e5cb" name="TsComment" xsi:type="utility-1f4de951-4fef-11dc-969a-0013728784ee">
+							<COMMENT-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string"/>
+							</COMMENT-EXPRESSION>
+							<COMMENT-VERDICT xsi:type="string">INCONCLUSIVE</COMMENT-VERDICT>
+						</TESTSTEP>
+						<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">3</VALUE>
+						</CASE-VALUE>
+						<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+					</TESTSTEP>
+					<TESTSTEP id="f77a466d-7df9-4db9-9d84-108a1fadf295" xsi:type="caseNode">
+						<TESTSTEP format-rev="1" id="152e61bd-29fd-4a75-a303-a43c74b4ad3c" name="TsComment" xsi:type="utility-1f4de951-4fef-11dc-969a-0013728784ee">
+							<COMMENT-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string"/>
+							</COMMENT-EXPRESSION>
+							<COMMENT-VERDICT xsi:type="string">INCONCLUSIVE</COMMENT-VERDICT>
+						</TESTSTEP>
+						<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">4</VALUE>
+						</CASE-VALUE>
+						<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+					</TESTSTEP>
+					<TESTSTEP id="3c5d747c-906b-4cf6-9e51-5e9ae7fc69e2" xsi:type="caseNode">
+						<TESTSTEP format-rev="1" id="b8a71e7f-39c8-4837-acdf-feb8107c1cfb" name="TsComment" xsi:type="utility-1f4de951-4fef-11dc-969a-0013728784ee">
+							<COMMENT-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string"/>
+							</COMMENT-EXPRESSION>
+							<COMMENT-VERDICT xsi:type="string">FAILED</COMMENT-VERDICT>
+						</TESTSTEP>
+						<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</CASE-VALUE>
+						<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+					</TESTSTEP>
+					<TESTSTEP id="2440d080-b9bc-4240-b4b1-9ed839cf2a0b" xsi:type="caseNode">
+						<TESTSTEP format-rev="1" id="2c357fe1-b18e-452b-acf4-1f834df9c195" name="TsComment" xsi:type="utility-1f4de951-4fef-11dc-969a-0013728784ee">
+							<COMMENT-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string"/>
+							</COMMENT-EXPRESSION>
+							<COMMENT-VERDICT xsi:type="string">ERROR</COMMENT-VERDICT>
+						</TESTSTEP>
+						<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">6</VALUE>
+						</CASE-VALUE>
+						<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+					</TESTSTEP>
+					<TESTSTEP id="0a44eda9-8420-48dd-82f3-5dbd060c6f2e" xsi:type="caseNode">
+						<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</CASE-VALUE>
+						<IS-DEFAULT xsi:type="boolean">True</IS-DEFAULT>
+					</TESTSTEP>
+					<SWITCH-VALUE xsi:type="varBaseExpression">
+						<NAME xsi:type="string">rank</NAME>
+					</SWITCH-VALUE>
+				</TESTSTEP>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="2" id="517" name="TsPostcondBlock" xsi:type="utility-0d2ac4dc-1d8f-4182-81d1-a5d5ca74a44f">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Postcondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Postcondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<EFFECT-TEST-RESULT xsi:type="boolean">False</EFFECT-TEST-RESULT>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>
